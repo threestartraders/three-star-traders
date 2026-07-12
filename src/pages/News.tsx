@@ -1,0 +1,2 @@
+import { PageHero, Reveal } from '../components/UI'; import { news } from '../data/site';
+export default function News(){return <><PageHero eyebrow="NEWS" title="Company updates and market activity" text="Publish product launches, partnerships, exhibitions and operational milestones."/><section className="section"><div className="container news-list">{news.map((n,i)=><Reveal className="news-item" key={n.title}><span>{n.date}</span><div><small>COMPANY UPDATE</small><h2>{n.title}</h2><p>{n.excerpt}</p></div><strong>0{i+1}</strong></Reveal>)}</div></section></>}

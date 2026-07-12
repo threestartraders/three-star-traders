@@ -1,0 +1,2 @@
+import { PageHero, Reveal } from '../components/UI'; import { services } from '../data/site';
+export default function Services(){return <><PageHero eyebrow="SERVICES" title="Practical support across the supply journey" text="From sourcing and import coordination to wholesale distribution and HORECA supply."/><section className="section"><div className="container service-list">{services.map((s,i)=><Reveal key={s.title} className="service-row"><strong>0{i+1}</strong><div><h2>{s.title}</h2><p>{s.text}</p></div><span>THREE STAR</span></Reveal>)}</div></section></>}
