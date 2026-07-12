@@ -1,10 +1,10 @@
 export const site = {
   name: 'Three Star Traders LLC',
-  shortName: 'Three Star',
+  shortName: 'Three Star Traders',
   tagline: 'Trading trust. Delivering growth.',
-  phone: '+971 00 000 0000',
+  phone: '+971 52 479 6648',
   email: 'info@threestartraders.com',
-  whatsapp: '971000000000',
+  whatsapp: '+971524796648',
   address: 'Dubai, United Arab Emirates',
   mapQuery: 'Dubai, United Arab Emirates',
   linkedin: '#',
