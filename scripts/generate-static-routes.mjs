@@ -1,0 +1,54 @@
+import { mkdir, readFile, writeFile } from 'node:fs/promises';
+
+const siteUrl = 'https://threestartraders.com';
+const distDir = new URL('../dist/', import.meta.url);
+
+const pages = [
+  { path: '', title: 'Soul Parfum UAE | Three Star Traders', description: 'Discover Soul Parfum in the UAE through Three Star Traders. Wholesale, retail, emerging channel and health club perfume supply enquiries.', canonical: '/' },
+  { path: 'about', title: 'About Three Star Traders | Soul Parfum UAE', description: 'Learn about Three Star Traders, a Dubai-based business presenting Soul Parfum to supported commercial channels in the UAE.', canonical: '/about/' },
+  { path: 'perfumes', title: 'Soul Parfum Collection | Desert, Swiss & Nature', description: 'Explore the Soul Parfum collection, including Soul Desert, Soul Swiss and Soul Nature Eau de Parfum editions.', canonical: '/perfumes/' },
+  { path: 'soul-parfum', title: 'Soul Parfum Brand | Three Star Traders UAE', description: 'Explore the visual world and current fragrance collection of Soul Parfum, presented in the UAE by Three Star Traders.', canonical: '/soul-parfum/' },
+  { path: 'services', title: 'Soul Parfum Wholesale & Supply Services UAE', description: 'Wholesale, distribution, emerging channel and health club supply support for Soul Parfum in the UAE.', canonical: '/services/' },
+  { path: 'distribution', title: 'Soul Parfum Distribution UAE | Three Star Traders', description: 'Business-focused Soul Parfum distribution and order coordination for supported UAE sales channels.', canonical: '/distribution/' },
+  { path: 'news', title: 'Soul Parfum & Three Star Traders News', description: 'Read Soul Parfum collection, supply and company updates from Three Star Traders in Dubai, UAE.', canonical: '/news/' },
+  { path: 'careers', title: 'Careers | Three Star Traders Dubai', description: 'View career information and future opportunities with Three Star Traders in Dubai, UAE.', canonical: '/careers/' },
+  { path: 'contact', title: 'Contact Three Star Traders | Soul Parfum UAE', description: 'Contact Three Star Traders about Soul Parfum availability, wholesale supply, retail and supported UAE business channels.', canonical: '/contact/' },
+  { path: 'privacy', title: 'Privacy Policy | Three Star Traders', description: 'Read the Three Star Traders website privacy policy and analytics information.', canonical: '/privacy/' },
+  { path: 'terms', title: 'Terms and Conditions | Three Star Traders', description: 'Read the terms and conditions for the Three Star Traders website.', canonical: '/terms/' },
+];
+
+const aliases = [
+  { path: 'products', canonical: '/perfumes/' },
+  { path: 'brands', canonical: '/soul-parfum/' },
+];
+
+const template = await readFile(new URL('index.html', distDir), 'utf8');
+
+function render(page, noindex = false) {
+  const canonicalUrl = `${siteUrl}${page.canonical}`;
+  return template
+    .replace(/<title>.*?<\/title>/, `<title>${page.title || 'Three Star Traders'}</title>`)
+    .replace(/<meta name="description" content=".*?" \/>/, `<meta name="description" content="${page.description || 'Soul Parfum UAE by Three Star Traders.'}" />`)
+    .replace(/<meta name="robots" content=".*?" \/>/, `<meta name="robots" content="${noindex ? 'noindex,follow' : 'index,follow,max-image-preview:large'}" />`)
+    .replace(/<link rel="canonical" href=".*?" \/>/, `<link rel="canonical" href="${canonicalUrl}" />`)
+    .replace(/<meta property="og:title" content=".*?" \/>/, `<meta property="og:title" content="${page.title || 'Three Star Traders'}" />`)
+    .replace(/<meta property="og:description" content=".*?" \/>/, `<meta property="og:description" content="${page.description || 'Soul Parfum UAE by Three Star Traders.'}" />`)
+    .replace(/<meta property="og:url" content=".*?" \/>/, `<meta property="og:url" content="${canonicalUrl}" />`)
+    .replace(/<meta name="twitter:title" content=".*?" \/>/, `<meta name="twitter:title" content="${page.title || 'Three Star Traders'}" />`)
+    .replace(/<meta name="twitter:description" content=".*?" \/>/, `<meta name="twitter:description" content="${page.description || 'Soul Parfum UAE by Three Star Traders.'}" />`);
+}
+
+for (const page of pages) {
+  if (!page.path) continue;
+  const pageDir = new URL(`${page.path}/`, distDir);
+  await mkdir(pageDir, { recursive: true });
+  await writeFile(new URL('index.html', pageDir), render(page));
+}
+
+for (const alias of aliases) {
+  const aliasDir = new URL(`${alias.path}/`, distDir);
+  await mkdir(aliasDir, { recursive: true });
+  await writeFile(new URL('index.html', aliasDir), render(alias, true));
+}
+
+await writeFile(new URL('404.html', distDir), template);

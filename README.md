@@ -52,7 +52,7 @@ Never place private Supabase service-role keys in a GitHub Pages project. Only p
 5. Under **Build and deployment**, choose **GitHub Actions**.
 6. Push a commit. The included workflow builds and deploys the site.
 
-This project uses `HashRouter`, so page refreshes work on GitHub Pages without a custom 404 file.
+This project uses clean `BrowserRouter` URLs. The production build generates a static `index.html` entry for every important route, plus a `404.html` fallback, so direct page visits work on GitHub Pages and search engines receive route-specific metadata.
 
 ## Custom domain
 

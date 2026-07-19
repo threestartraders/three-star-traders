@@ -1,3 +1,10 @@
-import { PageHero, Reveal, SectionTitle } from '../components/UI';
-const roles=[['Sales Executive','Dubai','Full time'],['Warehouse Coordinator','Dubai','Full time'],['Delivery Driver','UAE','Full time']];
-export default function Careers(){return <><PageHero eyebrow="CAREERS" title="Build your next chapter with us" text="A ready-to-edit careers page with sample roles and an application route."/><section className="section"><div className="container"><SectionTitle eyebrow="OPEN POSITIONS" title="Current opportunities"/><div className="jobs">{roles.map((r,i)=><Reveal key={r[0]} className="job"><span>0{i+1}</span><div><h3>{r[0]}</h3><p>{r[1]} · {r[2]}</p></div><a href={`mailto:careers@threestartraders.com?subject=Application: ${encodeURIComponent(r[0])}`}>Apply by email</a></Reveal>)}</div></div></section></>}
+import { Mail } from 'lucide-react';
+import { PageHero, Reveal } from '../components/UI';
+import { site } from '../data/site';
+
+export default function Careers() {
+  return <>
+    <PageHero eyebrow="CAREERS" title="Build your next chapter with us" text="Learn about future opportunities with Three Star Traders." />
+    <section className="section"><div className="container"><Reveal className="empty"><Mail size={34} /><h2>No positions are currently advertised</h2><p>For future career enquiries, send your profile to our company email address.</p><a className="btn primary" href={`mailto:${site.email}?subject=Career enquiry`}>Email your profile</a></Reveal></div></section>
+  </>;
+}

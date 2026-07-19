@@ -3,13 +3,13 @@ import { PageHero, Reveal, SectionTitle } from '../components/UI';
 
 export default function About() {
   return <>
-    <PageHero eyebrow="ABOUT THREE STAR" title="Built for dependable trade" text="An original corporate profile template ready to be customised with your company history, leadership and certifications." />
+    <PageHero eyebrow="ABOUT THREE STAR" title="Focused on dependable perfume trade" text="Three Star Traders connects Soul Parfum with business customers and supported sales channels in the UAE." />
     <section className="section">
       <div className="container split">
         <Reveal>
           <SectionTitle eyebrow="OUR STORY" title="Commercial experience with a partnership mindset" />
-          <p className="lead">Three Star Traders LLC is positioned as a UAE-based trading and distribution company serving businesses with carefully selected products, responsive service and disciplined fulfilment.</p>
-          <p>This project currently uses editable placeholder content. Replace it with the company’s exact year of establishment, ownership story, markets served, licences and operational milestones.</p>
+          <p className="lead">Three Star Traders LLC is a UAE-based trading and distribution company with a focused perfume portfolio built around Soul Parfum.</p>
+          <p>We support wholesale, retail, emerging channel and health club enquiries through responsive communication and coordinated supply.</p>
         </Reveal>
         <Reveal className="about-brand-panel">
           <img src="/assets/logos/logo-primary-stacked-gold.svg" alt="Three Star Traders – Built on Trust, Driven by Excellence" />

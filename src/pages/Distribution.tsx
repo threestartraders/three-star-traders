@@ -1,2 +1,14 @@
-import { MapPin, PackageCheck, Route, Warehouse } from 'lucide-react'; import { PageHero, Reveal, SectionTitle } from '../components/UI'; import { site } from '../data/site';
-export default function Distribution(){return <><PageHero eyebrow="DISTRIBUTION" title="Coverage built around customer service" text="Present your warehouse, fleet, delivery regions and channel capabilities in one clear page."/><section className="section"><div className="container split"><Reveal><SectionTitle eyebrow="NETWORK" title="From order confirmation to final delivery"/><p className="lead">This template supports route coverage, service channels, fleet details and warehouse information. Replace the current placeholders with verified operational statistics.</p><div className="mini-grid"><div><Warehouse/><h3>Warehousing</h3><p>Organised handling and dispatch.</p></div><div><Route/><h3>Route planning</h3><p>Scheduled customer coverage.</p></div><div><PackageCheck/><h3>Order control</h3><p>Clear fulfilment process.</p></div><div><MapPin/><h3>Market reach</h3><p>UAE-focused business supply.</p></div></div></Reveal><Reveal className="map-frame"><iframe title="Three Star location" src={`https://www.google.com/maps?q=${encodeURIComponent(site.mapQuery)}&output=embed`} loading="lazy" referrerPolicy="no-referrer-when-downgrade"/></Reveal></div></section></>}
+import { MapPin, PackageCheck, Route, Store } from 'lucide-react';
+import { PageHero, Reveal, SectionTitle } from '../components/UI';
+import { site } from '../data/site';
+
+export default function Distribution() {
+  return <>
+    <PageHero eyebrow="DISTRIBUTION" title="Soul Parfum supply for supported UAE channels" text="A focused approach to business enquiries, order coordination and market supply." />
+    <section className="section"><div className="container split"><Reveal>
+      <SectionTitle eyebrow="OUR APPROACH" title="From enquiry to coordinated supply" />
+      <p className="lead">We work directly with business customers to understand channel requirements, confirm availability and coordinate the appropriate supply process.</p>
+      <div className="mini-grid"><div><Store /><h3>Retail supply</h3><p>Support for perfume retailers and developing concepts.</p></div><div><Route /><h3>Channel coordination</h3><p>Clear communication across supported UAE channels.</p></div><div><PackageCheck /><h3>Order confirmation</h3><p>Availability and terms confirmed before fulfilment.</p></div><div><MapPin /><h3>UAE focus</h3><p>Business enquiries centred on the UAE market.</p></div></div>
+    </Reveal><Reveal className="map-frame"><iframe title="Three Star Traders location" src={`https://www.google.com/maps?q=${encodeURIComponent(site.mapQuery)}&output=embed`} loading="lazy" referrerPolicy="no-referrer-when-downgrade" /></Reveal></div></section>
+  </>;
+}
