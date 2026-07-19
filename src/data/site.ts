@@ -1,7 +1,7 @@
 export const site = {
   name: 'Three Star Traders LLC',
   shortName: 'Three Star Traders',
-  tagline: 'Trading trust. Delivering growth.',
+  tagline: 'Built on Trust, Driven by Excellence',
   phone: '+971 52 479 6648',
   email: 'info@threestartraders.com',
   whatsapp: '+971524796648',
