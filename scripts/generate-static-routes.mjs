@@ -4,10 +4,9 @@ const siteUrl = 'https://threestartraders.com';
 const distDir = new URL('../dist/', import.meta.url);
 
 const pages = [
-  { path: '', title: 'Soul Parfum UAE | Three Star Traders', description: 'Discover Soul Parfum in the UAE through Three Star Traders. Wholesale, retail, emerging channel and health club perfume supply enquiries.', canonical: '/' },
+  { path: '', title: 'Three Star Traders UAE | Distribution & Soul Parfum', description: 'Three Star Traders is a UAE trading and distribution company presenting Soul Parfum for wholesale, retail, emerging channel and health club supply enquiries.', canonical: '/' },
   { path: 'about', title: 'About Three Star Traders | Soul Parfum UAE', description: 'Learn about Three Star Traders, a Dubai-based business presenting Soul Parfum to supported commercial channels in the UAE.', canonical: '/about/' },
-  { path: 'perfumes', title: 'Soul Parfum Collection | Desert, Swiss & Nature', description: 'Explore the Soul Parfum collection, including Soul Desert, Soul Swiss and Soul Nature Eau de Parfum editions.', canonical: '/perfumes/' },
-  { path: 'soul-parfum', title: 'Soul Parfum Brand | Three Star Traders UAE', description: 'Explore the visual world and current fragrance collection of Soul Parfum, presented in the UAE by Three Star Traders.', canonical: '/soul-parfum/' },
+  { path: 'soul-parfum', title: 'Soul Parfum Collection | Desert, Swiss & Nature', description: 'Explore Soul Parfum, including Soul Desert, Soul Swiss and Soul Nature Eau de Parfum, brand imagery and UAE business supply information.', canonical: '/soul-parfum/' },
   { path: 'services', title: 'Soul Parfum Wholesale & Supply Services UAE', description: 'Wholesale, distribution, emerging channel and health club supply support for Soul Parfum in the UAE.', canonical: '/services/' },
   { path: 'distribution', title: 'Soul Parfum Distribution UAE | Three Star Traders', description: 'Business-focused Soul Parfum distribution and order coordination for supported UAE sales channels.', canonical: '/distribution/' },
   { path: 'news', title: 'Soul Parfum & Three Star Traders News', description: 'Read Soul Parfum collection, supply and company updates from Three Star Traders in Dubai, UAE.', canonical: '/news/' },
@@ -18,7 +17,8 @@ const pages = [
 ];
 
 const aliases = [
-  { path: 'products', canonical: '/perfumes/' },
+  { path: 'perfumes', canonical: '/soul-parfum/' },
+  { path: 'products', canonical: '/soul-parfum/' },
   { path: 'brands', canonical: '/soul-parfum/' },
 ];
 

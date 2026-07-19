@@ -5,8 +5,8 @@ const siteUrl = 'https://threestartraders.com';
 
 const pages: Record<string, { title: string; description: string; canonical: string }> = {
   '/': {
-    title: 'Soul Parfum UAE | Three Star Traders',
-    description: 'Discover Soul Parfum in the UAE through Three Star Traders. Wholesale, retail, emerging channel and health club perfume supply enquiries.',
+    title: 'Three Star Traders UAE | Distribution & Soul Parfum',
+    description: 'Three Star Traders is a UAE trading and distribution company presenting Soul Parfum for wholesale, retail, emerging channel and health club supply enquiries.',
     canonical: '/',
   },
   '/about': {
@@ -14,14 +14,9 @@ const pages: Record<string, { title: string; description: string; canonical: str
     description: 'Learn about Three Star Traders, a Dubai-based business presenting Soul Parfum to supported commercial channels in the UAE.',
     canonical: '/about/',
   },
-  '/perfumes': {
-    title: 'Soul Parfum Collection | Desert, Swiss & Nature',
-    description: 'Explore the Soul Parfum collection, including Soul Desert, Soul Swiss and Soul Nature Eau de Parfum editions.',
-    canonical: '/perfumes/',
-  },
   '/soul-parfum': {
-    title: 'Soul Parfum Brand | Three Star Traders UAE',
-    description: 'Explore the visual world and current fragrance collection of Soul Parfum, presented in the UAE by Three Star Traders.',
+    title: 'Soul Parfum Collection | Desert, Swiss & Nature',
+    description: 'Explore Soul Parfum, including Soul Desert, Soul Swiss and Soul Nature Eau de Parfum, brand imagery and UAE business supply information.',
     canonical: '/soul-parfum/',
   },
   '/services': {

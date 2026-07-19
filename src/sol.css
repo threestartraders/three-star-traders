@@ -153,6 +153,10 @@
   gap: 72px;
 }
 
+#collection {
+  scroll-margin-top: 110px;
+}
+
 .collection-item {
   display: grid;
   grid-template-columns: 1fr 1fr;

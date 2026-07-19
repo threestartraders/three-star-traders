@@ -4,10 +4,10 @@ A complete React + TypeScript corporate website prepared for GitHub Pages.
 
 ## Included
 
-- Home, About, Products, Brands, Services, Distribution, News, Careers and Contact pages
+- Home, About, Soul Parfum, Services, Distribution, News, Careers and Contact pages
 - Responsive desktop, tablet and mobile design
 - Framer Motion scroll animations
-- Searchable and filterable product portfolio
+- Dedicated Soul Parfum brand and collection presentation
 - Contact form with optional Formspree integration and email fallback
 - Free Google Maps embed
 - WhatsApp shortcut
@@ -29,8 +29,8 @@ Edit `src/data/site.ts` first. Replace:
 - email and WhatsApp number
 - address and map query
 - statistics
-- product categories and product list
-- brands, services and news
+- Soul Parfum editions and imagery
+- services and news
 
 Replace placeholder career email addresses in `src/pages/Careers.tsx`.
 

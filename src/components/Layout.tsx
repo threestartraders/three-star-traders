@@ -6,7 +6,7 @@ import { trackPageView } from '../analytics';
 import Seo from './Seo';
 
 const links = [
-  ['/', 'Home'], ['/about', 'About'], ['/perfumes', 'Perfumes'], ['/soul-parfum', 'Soul Parfum'],
+  ['/', 'Home'], ['/about', 'About'], ['/soul-parfum', 'Soul Parfum'],
   ['/services', 'Services'], ['/distribution', 'Distribution'], ['/news', 'News'], ['/careers', 'Careers'], ['/contact', 'Contact'],
 ];
 
@@ -38,7 +38,7 @@ export default function Layout() {
     <footer className="footer">
       <div className="container footer-grid">
         <div className="footer-brand"><Link to="/" aria-label="Three Star Traders home"><img className="footer-logo" src="/assets/logos/logo-stacked-no-tagline.svg" alt="Three Star Traders" /></Link><p>{site.tagline}. We present Soul Parfum for retailers, emerging channels, health clubs and commercial buyers.</p></div>
-        <div><h4>Quick links</h4><Link to="/about">Company profile</Link><Link to="/perfumes">Perfume collection</Link><Link to="/soul-parfum">Soul Parfum</Link><Link to="/contact">Contact us</Link></div>
+        <div><h4>Quick links</h4><Link to="/about">Company profile</Link><Link to="/soul-parfum">Soul Parfum collection</Link><Link to="/contact">Contact us</Link></div>
         <div><h4>Contact</h4><p><MapPin size={16}/> {site.address}</p><p><Phone size={16}/> {site.phone}</p><p><Mail size={16}/> {site.email}</p></div>
         <div><h4>Business enquiries</h4><p>Speak with our team about supply, distribution or brand partnership opportunities.</p><Link className="text-link" to="/contact">Start an enquiry <ArrowUpRight size={16}/></Link></div>
       </div>
