@@ -41,7 +41,7 @@ export const services = [
   { title: 'Import & Export', text: 'Supplier coordination, documentation support and cross-border trade facilitation.' },
   { title: 'Brand Representation', text: 'Market-entry support, channel development and responsible brand stewardship.' },
   { title: 'HORECA Supply', text: 'Food, packaging, hygiene and operational essentials for hospitality customers.' },
-  { title: 'Private Label Support', text: 'Product identification, packaging coordination and scalable supply planning.' },
+  { title: 'Emerging Channel & Health Club Supply', text: 'Targeted product sourcing and dependable supply for emerging retail channels, gyms, fitness centres and health clubs.' },
 ];
 
 export const news = [
