@@ -13,10 +13,10 @@ export const site = {
 };
 
 export const stats = [
-  { value: '3', label: 'Soul Editions' },
-  { value: 'SOUL', label: 'Parfum Brand' },
-  { value: 'UAE', label: 'Market Focus' },
-  { value: 'B2B', label: 'Supply Enquiries' },
+  { value: 'UAE', label: 'Dubai Based' },
+  { value: 'B2B', label: 'Business Focus' },
+  { value: 'TRADE', label: 'Core Expertise' },
+  { value: 'SERVICE', label: 'Partner Commitment' },
 ];
 
 export const perfumes = [
@@ -65,16 +65,15 @@ export const solBrandImages = [
 ];
 
 export const services = [
-  { title: 'Wholesale Perfume Supply', text: 'Business-focused Soul Parfum supply for retailers and commercial buyers.' },
+  { title: 'Wholesale Trading', text: 'Business-focused sourcing and supply support for retailers and commercial buyers.' },
   { title: 'Distribution', text: 'Coordinated order fulfilment and market supply across supported UAE channels.' },
-  { title: 'Import & Export', text: 'Documentation coordination and cross-border trade support for perfume supply.' },
-  { title: 'Brand Representation', text: 'Responsible market development and commercial representation for Soul Parfum.' },
-  { title: 'Emerging Channel Supply', text: 'Flexible perfume supply for new retail concepts and developing sales channels.' },
-  { title: 'Health Club Supply', text: 'Soul Parfum supply enquiries for gyms, wellness spaces and health club retail environments.' },
+  { title: 'Import & Export', text: 'Documentation coordination and practical support for cross-border trade.' },
+  { title: 'Brand Representation', text: 'Responsible market development and commercial representation for selected brands.' },
+  { title: 'Channel Development', text: 'Flexible support for established businesses and developing sales channels.' },
+  { title: 'Commercial Supply', text: 'Responsive supply enquiries tailored to the needs of business customers.' },
 ];
 
 export const news = [
-  { date: '19 July 2026', title: 'Soul Parfum becomes the focus of our fragrance portfolio', excerpt: 'Three Star Traders now presents Soul Parfum across its dedicated fragrance collection and business enquiry channels.' },
   { date: '12 July 2026', title: 'Three Star Traders launches its renewed digital presence', excerpt: 'A modern platform for customers and commercial partners to connect with our team.' },
-  { date: '20 June 2026', title: 'Perfume supply enquiries opened for UAE businesses', excerpt: 'Retailers, emerging channels and health clubs can contact our team to discuss Soul Parfum supply.' },
+  { date: '20 June 2026', title: 'Business enquiry channels expanded', excerpt: 'Retailers, distributors and commercial buyers can contact our team to discuss supply and partnership requirements.' },
 ];

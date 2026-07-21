@@ -10,7 +10,7 @@ export default function Home() {
         <span className="eyebrow gold">UAE TRADING &amp; DISTRIBUTION</span>
         <h1>Dependable products.<br /><em>Stronger partnerships.</em></h1>
         <p>Three Star Traders LLC supports retailers, hospitality operators and commercial customers through reliable sourcing, distribution and responsive service.</p>
-        <div className="actions"><Link className="btn primary" to="/soul-parfum">Explore Soul Parfum <ArrowRight size={18} /></Link><Link className="btn ghost" to="/contact">Become a partner</Link></div>
+        <div className="actions"><Link className="btn primary" to="/services">Explore our services <ArrowRight size={18} /></Link><Link className="btn ghost" to="/contact">Become a partner</Link></div>
       </Reveal>
       <Reveal delay={.15} className="hero-visual">
         <div className="visual-card main"><span>TRADE</span><strong>Built on reliability</strong><p>From product selection to final delivery, every step is designed around consistency.</p></div>
@@ -39,7 +39,7 @@ export default function Home() {
       <div className="cards three">{services.map((service, index) => <Reveal key={service.title} delay={index * .05} className="card service-card"><span>0{index + 1}</span><h3>{service.title}</h3><p>{service.text}</p></Reveal>)}</div>
     </div></section>
 
-    <section className="brand-strip"><div className="container"><span>FEATURED BRAND</span><strong>SOUL PARFUM</strong><strong>SOUL DESERT</strong><strong>SOUL SWISS</strong><strong>SOUL NATURE</strong></div></section>
+    <section className="brand-strip"><div className="container"><span>HOW WE WORK</span><strong>RELIABLE SOURCING</strong><strong>COORDINATED DISTRIBUTION</strong><strong>RESPONSIVE SERVICE</strong><strong>LONG-TERM PARTNERSHIPS</strong></div></section>
 
     <section className="cta"><div className="container"><Reveal><span className="eyebrow gold">LET&apos;S WORK TOGETHER</span><h2>Looking for a dependable supply or distribution partner?</h2><p>Tell us what your business needs. Our team will review your enquiry and respond with the right next step.</p><Link className="btn primary" to="/contact">Send an enquiry <ArrowRight size={18} /></Link></Reveal></div></section>
   </>;

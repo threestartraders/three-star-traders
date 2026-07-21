@@ -3,13 +3,13 @@ import { PageHero, Reveal, SectionTitle } from '../components/UI';
 
 export default function About() {
   return <>
-    <PageHero eyebrow="ABOUT THREE STAR" title="Focused on dependable perfume trade" text="Three Star Traders connects Soul Parfum with business customers and supported sales channels in the UAE." />
+    <PageHero eyebrow="ABOUT THREE STAR" title="Built for dependable trade" text="Three Star Traders connects products, partners and business customers through responsive service in the UAE." />
     <section className="section">
       <div className="container split">
         <Reveal>
           <SectionTitle eyebrow="OUR STORY" title="Commercial experience with a partnership mindset" />
-          <p className="lead">Three Star Traders LLC is a UAE-based trading and distribution company with a focused perfume portfolio built around Soul Parfum.</p>
-          <p>We support wholesale, retail, emerging channel and health club enquiries through responsive communication and coordinated supply.</p>
+          <p className="lead">Three Star Traders LLC is a UAE-based trading and distribution company committed to dependable sourcing, coordinated supply and lasting commercial relationships.</p>
+          <p>We support wholesale, retail and other business enquiries through responsive communication and practical service.</p>
         </Reveal>
         <Reveal className="about-brand-panel">
           <img src="/assets/logos/logo-primary-stacked-gold.svg" alt="Three Star Traders – Built on Trust, Driven by Excellence" />
@@ -29,8 +29,8 @@ export default function About() {
     </section>
     <section className="section">
       <div className="container">
-        <SectionTitle eyebrow="MILESTONES" title="A timeline ready for your real history" />
-        <div className="timeline">{[['Foundation', 'Company established and initial trading operations began.'], ['Portfolio Growth', 'Product and supplier relationships expanded.'], ['Distribution Development', 'Structured fulfilment and customer coverage strengthened.'], ['Next Chapter', 'Digital platform and new partnership programme introduced.']].map((x, i) => <Reveal key={x[0]} className="timeline-item"><strong>0{i + 1}</strong><div><h3>{x[0]}</h3><p>{x[1]}</p></div></Reveal>)}</div>
+        <SectionTitle eyebrow="OUR APPROACH" title="How we create value for partners" />
+        <div className="timeline">{[['Understand', 'We begin with the customer, market and commercial requirement.'], ['Source', 'We evaluate suitable products and supply arrangements with care.'], ['Coordinate', 'We keep availability, terms and fulfilment communication clear.'], ['Support', 'We remain responsive as relationships and business needs develop.']].map((x, i) => <Reveal key={x[0]} className="timeline-item"><strong>0{i + 1}</strong><div><h3>{x[0]}</h3><p>{x[1]}</p></div></Reveal>)}</div>
       </div>
     </section>
   </>;

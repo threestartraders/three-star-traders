@@ -70,5 +70,9 @@
 }
 
 @media (max-width: 640px) {
-  .about-brand-panel { padding: 30px 22px; }
+  .site-logo { height: 42px; max-width: 155px; }
+  .footer-logo { width: 160px; margin-bottom: 20px; }
+  .about-brand-panel { gap: 26px; padding: 30px 22px; }
+  .about-purpose { padding-top: 24px; }
+  .about-purpose blockquote { font-size: 1.25rem; line-height: 1.45; }
 }

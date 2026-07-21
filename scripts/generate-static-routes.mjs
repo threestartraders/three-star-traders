@@ -4,14 +4,14 @@ const siteUrl = 'https://threestartraders.com';
 const distDir = new URL('../dist/', import.meta.url);
 
 const pages = [
-  { path: '', title: 'Three Star Traders UAE | Distribution & Soul Parfum', description: 'Three Star Traders is a UAE trading and distribution company presenting Soul Parfum for wholesale, retail, emerging channel and health club supply enquiries.', canonical: '/' },
-  { path: 'about', title: 'About Three Star Traders | Soul Parfum UAE', description: 'Learn about Three Star Traders, a Dubai-based business presenting Soul Parfum to supported commercial channels in the UAE.', canonical: '/about/' },
+  { path: '', title: 'Three Star Traders UAE | Trading & Distribution', description: 'Three Star Traders is a Dubai-based trading and distribution company supporting retailers, commercial buyers and business partners across the UAE.', canonical: '/' },
+  { path: 'about', title: 'About Three Star Traders | Dubai, UAE', description: 'Learn about Three Star Traders, a Dubai-based trading and distribution company focused on dependable supply and commercial partnerships.', canonical: '/about/' },
   { path: 'soul-parfum', title: 'Soul Parfum Collection | Desert, Swiss & Nature', description: 'Explore Soul Parfum, including Soul Desert, Soul Swiss and Soul Nature Eau de Parfum, brand imagery and UAE business supply information.', canonical: '/soul-parfum/' },
-  { path: 'services', title: 'Soul Parfum Wholesale & Supply Services UAE', description: 'Wholesale, distribution, emerging channel and health club supply support for Soul Parfum in the UAE.', canonical: '/services/' },
-  { path: 'distribution', title: 'Soul Parfum Distribution UAE | Three Star Traders', description: 'Business-focused Soul Parfum distribution and order coordination for supported UAE sales channels.', canonical: '/distribution/' },
-  { path: 'news', title: 'Soul Parfum & Three Star Traders News', description: 'Read Soul Parfum collection, supply and company updates from Three Star Traders in Dubai, UAE.', canonical: '/news/' },
+  { path: 'services', title: 'Trading & Distribution Services UAE | Three Star Traders', description: 'Explore wholesale trading, distribution, import and export support, brand representation and commercial supply services in the UAE.', canonical: '/services/' },
+  { path: 'distribution', title: 'Business Distribution UAE | Three Star Traders', description: 'Business-focused distribution and order coordination for retailers and supported commercial channels in the UAE.', canonical: '/distribution/' },
+  { path: 'news', title: 'News & Updates | Three Star Traders', description: 'Read company, supply and commercial updates from Three Star Traders in Dubai, UAE.', canonical: '/news/' },
   { path: 'careers', title: 'Careers | Three Star Traders Dubai', description: 'View career information and future opportunities with Three Star Traders in Dubai, UAE.', canonical: '/careers/' },
-  { path: 'contact', title: 'Contact Three Star Traders | Soul Parfum UAE', description: 'Contact Three Star Traders about Soul Parfum availability, wholesale supply, retail and supported UAE business channels.', canonical: '/contact/' },
+  { path: 'contact', title: 'Contact Three Star Traders | Dubai, UAE', description: 'Contact Three Star Traders about sourcing, wholesale supply, distribution and commercial partnerships in the UAE.', canonical: '/contact/' },
   { path: 'privacy', title: 'Privacy Policy | Three Star Traders', description: 'Read the Three Star Traders website privacy policy and analytics information.', canonical: '/privacy/' },
   { path: 'terms', title: 'Terms and Conditions | Three Star Traders', description: 'Read the terms and conditions for the Three Star Traders website.', canonical: '/terms/' },
 ];
@@ -28,14 +28,14 @@ function render(page, noindex = false) {
   const canonicalUrl = `${siteUrl}${page.canonical}`;
   return template
     .replace(/<title>.*?<\/title>/, `<title>${page.title || 'Three Star Traders'}</title>`)
-    .replace(/<meta name="description" content=".*?" \/>/, `<meta name="description" content="${page.description || 'Soul Parfum UAE by Three Star Traders.'}" />`)
+    .replace(/<meta name="description" content=".*?" \/>/, `<meta name="description" content="${page.description || 'Trading and distribution in the UAE by Three Star Traders.'}" />`)
     .replace(/<meta name="robots" content=".*?" \/>/, `<meta name="robots" content="${noindex ? 'noindex,follow' : 'index,follow,max-image-preview:large'}" />`)
     .replace(/<link rel="canonical" href=".*?" \/>/, `<link rel="canonical" href="${canonicalUrl}" />`)
     .replace(/<meta property="og:title" content=".*?" \/>/, `<meta property="og:title" content="${page.title || 'Three Star Traders'}" />`)
-    .replace(/<meta property="og:description" content=".*?" \/>/, `<meta property="og:description" content="${page.description || 'Soul Parfum UAE by Three Star Traders.'}" />`)
+    .replace(/<meta property="og:description" content=".*?" \/>/, `<meta property="og:description" content="${page.description || 'Trading and distribution in the UAE by Three Star Traders.'}" />`)
     .replace(/<meta property="og:url" content=".*?" \/>/, `<meta property="og:url" content="${canonicalUrl}" />`)
     .replace(/<meta name="twitter:title" content=".*?" \/>/, `<meta name="twitter:title" content="${page.title || 'Three Star Traders'}" />`)
-    .replace(/<meta name="twitter:description" content=".*?" \/>/, `<meta name="twitter:description" content="${page.description || 'Soul Parfum UAE by Three Star Traders.'}" />`);
+    .replace(/<meta name="twitter:description" content=".*?" \/>/, `<meta name="twitter:description" content="${page.description || 'Trading and distribution in the UAE by Three Star Traders.'}" />`);
 }
 
 for (const page of pages) {

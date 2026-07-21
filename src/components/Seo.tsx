@@ -5,13 +5,13 @@ const siteUrl = 'https://threestartraders.com';
 
 const pages: Record<string, { title: string; description: string; canonical: string }> = {
   '/': {
-    title: 'Three Star Traders UAE | Distribution & Soul Parfum',
-    description: 'Three Star Traders is a UAE trading and distribution company presenting Soul Parfum for wholesale, retail, emerging channel and health club supply enquiries.',
+    title: 'Three Star Traders UAE | Trading & Distribution',
+    description: 'Three Star Traders is a Dubai-based trading and distribution company supporting retailers, commercial buyers and business partners across the UAE.',
     canonical: '/',
   },
   '/about': {
-    title: 'About Three Star Traders | Soul Parfum UAE',
-    description: 'Learn about Three Star Traders, a Dubai-based business presenting Soul Parfum to supported commercial channels in the UAE.',
+    title: 'About Three Star Traders | Dubai, UAE',
+    description: 'Learn about Three Star Traders, a Dubai-based trading and distribution company focused on dependable supply and commercial partnerships.',
     canonical: '/about/',
   },
   '/soul-parfum': {
@@ -20,18 +20,18 @@ const pages: Record<string, { title: string; description: string; canonical: str
     canonical: '/soul-parfum/',
   },
   '/services': {
-    title: 'Soul Parfum Wholesale & Supply Services UAE',
-    description: 'Wholesale, distribution, emerging channel and health club supply support for Soul Parfum in the UAE.',
+    title: 'Trading & Distribution Services UAE | Three Star Traders',
+    description: 'Explore wholesale trading, distribution, import and export support, brand representation and commercial supply services in the UAE.',
     canonical: '/services/',
   },
   '/distribution': {
-    title: 'Soul Parfum Distribution UAE | Three Star Traders',
-    description: 'Business-focused Soul Parfum distribution and order coordination for supported UAE sales channels.',
+    title: 'Business Distribution UAE | Three Star Traders',
+    description: 'Business-focused distribution and order coordination for retailers and supported commercial channels in the UAE.',
     canonical: '/distribution/',
   },
   '/news': {
-    title: 'Soul Parfum & Three Star Traders News',
-    description: 'Read Soul Parfum collection, supply and company updates from Three Star Traders in Dubai, UAE.',
+    title: 'News & Updates | Three Star Traders',
+    description: 'Read company, supply and commercial updates from Three Star Traders in Dubai, UAE.',
     canonical: '/news/',
   },
   '/careers': {
@@ -40,8 +40,8 @@ const pages: Record<string, { title: string; description: string; canonical: str
     canonical: '/careers/',
   },
   '/contact': {
-    title: 'Contact Three Star Traders | Soul Parfum UAE',
-    description: 'Contact Three Star Traders about Soul Parfum availability, wholesale supply, retail and supported UAE business channels.',
+    title: 'Contact Three Star Traders | Dubai, UAE',
+    description: 'Contact Three Star Traders about sourcing, wholesale supply, distribution and commercial partnerships in the UAE.',
     canonical: '/contact/',
   },
   '/privacy': {

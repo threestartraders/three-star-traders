@@ -28,8 +28,8 @@ export default function Layout() {
         <Link to="/" className="logo" aria-label="Three Star Traders home">
           <img className="site-logo header-logo" src="/assets/logos/logo-horizontal-white.svg" alt="Three Star Traders" />
         </Link>
-        <button className="menu-btn" onClick={() => setOpen(!open)} aria-label="Toggle menu">{open ? <X/> : <Menu/>}</button>
-        <nav className={open ? 'nav-links open' : 'nav-links'}>
+        <button className="menu-btn" type="button" onClick={() => setOpen(!open)} aria-label={open ? 'Close menu' : 'Open menu'} aria-expanded={open} aria-controls="primary-navigation">{open ? <X/> : <Menu/>}</button>
+        <nav id="primary-navigation" className={open ? 'nav-links open' : 'nav-links'}>
           {links.map(([to,label]) => <NavLink key={to} to={to} className={({isActive}) => isActive ? 'active' : ''}>{label}</NavLink>)}
         </nav>
       </div>
@@ -37,8 +37,8 @@ export default function Layout() {
     <main><Outlet/></main>
     <footer className="footer">
       <div className="container footer-grid">
-        <div className="footer-brand"><Link to="/" aria-label="Three Star Traders home"><img className="footer-logo" src="/assets/logos/logo-stacked-no-tagline.svg" alt="Three Star Traders" /></Link><p>{site.tagline}. We present Soul Parfum for retailers, emerging channels, health clubs and commercial buyers.</p></div>
-        <div><h4>Quick links</h4><Link to="/about">Company profile</Link><Link to="/soul-parfum">Soul Parfum collection</Link><Link to="/contact">Contact us</Link></div>
+        <div className="footer-brand"><Link to="/" aria-label="Three Star Traders home"><img className="footer-logo" src="/assets/logos/logo-stacked-no-tagline.svg" alt="Three Star Traders" /></Link><p>{site.tagline}. A Dubai-based trading and distribution company serving retailers and commercial partners.</p></div>
+        <div><h4>Quick links</h4><Link to="/about">Company profile</Link><Link to="/services">Our services</Link><Link to="/contact">Contact us</Link></div>
         <div><h4>Contact</h4><p><MapPin size={16}/> {site.address}</p><p><Phone size={16}/> {site.phone}</p><p><Mail size={16}/> {site.email}</p></div>
         <div><h4>Business enquiries</h4><p>Speak with our team about supply, distribution or brand partnership opportunities.</p><Link className="text-link" to="/contact">Start an enquiry <ArrowUpRight size={16}/></Link></div>
       </div>
