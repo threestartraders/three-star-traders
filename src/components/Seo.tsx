@@ -15,8 +15,8 @@ const pages: Record<string, { title: string; description: string; canonical: str
     canonical: '/about/',
   },
   '/soul-parfum': {
-    title: 'Soul Parfum Collection | Desert, Swiss & Nature',
-    description: 'Explore Soul Parfum, including Soul Desert, Soul Swiss and Soul Nature Eau de Parfum, brand imagery and UAE business supply information.',
+    title: 'Soul Parfum Collection | Desert, Swiss, Nature & Botanica',
+    description: 'Explore Soul Parfum, including Soul Desert, Soul Swiss, Soul Nature and Soul Botanica Eau de Parfum, brand imagery and UAE business supply information.',
     canonical: '/soul-parfum/',
   },
   '/services': {

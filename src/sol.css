@@ -169,6 +169,7 @@
 }
 
 .collection-image {
+  background: white;
   aspect-ratio: 1 / 1;
   overflow: hidden;
   border-radius: var(--radius);

@@ -44,6 +44,15 @@ export const perfumes = [
     image: '/assets/soul-parfum/landing/soul-nature-eau-de-parfum.jpeg',
     description: 'A green Soul Parfum presentation inspired by the visual freshness and character of the natural world.',
   },
+  {
+    id: 4,
+    name: 'Soul Botanica',
+    format: 'Eau de Parfum',
+    size: '100 ml',
+    image: '/assets/soul-parfum/landing/soul-botanica-eau-de-parfum.jpg',
+    imageFit: 'contain' as const,
+    description: 'An amber, aromatic and green fragrance opening with amber, aromatic and spicy accords. Clary sage, violet and grapefruit form the heart, with patchouli and vetivert at the base. Presented as a 100 ml natural spray in a frosted amber bottle with teal gift packaging.',
+  },
 ];
 
 export const solLandingImages = [
