@@ -16,8 +16,9 @@ export function initializeAnalytics() {
   if (typeof window === 'undefined' || window.gtag) return;
 
   window.dataLayer = window.dataLayer || [];
-  window.gtag = function gtag(...args: Parameters<Gtag>) {
-    window.dataLayer.push(args);
+  window.gtag = function gtag() {
+    // Google's command queue expects an Arguments object, not a rest-parameter array.
+    window.dataLayer.push(arguments);
   };
 
   window.gtag('js', new Date());
