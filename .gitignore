@@ -1,3 +1,9 @@
 # Local Codex instructions (specific to this computer/account setup)
 /AGENTS.md
 /.codex/
+
+# Local letterhead exports and their generated build copies
+/public/assets/Three-Star-Traders-Letterhead*
+/public/assets/letterhead-background.png
+/dist/assets/Three-Star-Traders-Letterhead*
+/dist/assets/letterhead-background.png
